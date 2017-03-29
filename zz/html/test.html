@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--公用的css-->
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <!--主页的css-->
+    <link href="../css/main/index.css" rel="stylesheet" type="text/css">
+    <!--竖排菜单用到的css-->
+    <link href="../css/main/jquery-accordion-menu.css" type="text/css" rel="stylesheet">
+    <!--横排菜单的css-->
+    <link href="../css/main/menu.css" rel="stylesheet" type="text/css">
+    <!--bootstrap 框架的css-->
+    <link href="../assets/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div id="jquery-accordion-menu" class="jquery-accordion-menu "
+     style="width: 200px;margin-top: -2px; ">
+    <ul id="demo-list">
+        <li class="active">
+            <a href="text.html" target="myiframe"><i class="fa fa-home"></i>首页</a></li>
+        <li><a href="main.html" target="myiframe"><i class="fa fa-glass"></i>员工管理 </a></li>
+        <li><a href="#"><i class="fa fa-file-image-o"></i>会员管理
+        </a> <span class="jquery-accordion-menu-label"> 12 </span></li>
+        <li><a href="#"><i class="fa fa-cog"></i>收银作业</a>
+            <ul class="submenu">
+                <li><a href="#">二级菜单 </a></li>
+                <li><a href="#">二级菜单 </a></li>
+                <li><a href="#">二级菜单 </a>
+                    <ul class="submenu">
+                        <li><a href="#">三级菜单 </a></li>
+                        <li><a href="#">三级菜单 </a></li>
+                        <li><a href="#">三级菜单 </a></li>
+                        <li><a href="#">三级菜单 </a></li>
+                    </ul>
+                </li>
+                <li><a href="#">二级菜单 </a></li>
+            </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-home"></i>基本设置 </a></li>
+        <li><a href="#"><i class="fa fa-suitcase"></i>明细报表 </a>
+            <ul class="submenu">
+                <li><a href="#">Web Design </a></li>
+                <li><a href="#">Graphics </a><span
+                        class="jquery-accordion-menu-label">10 </span></li>
+                <li><a href="#">Photoshop </a></li>
+                <li><a href="#">Programming </a></li>
+            </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-user"></i>统计报表 </a></li>
+        <li><a href="#"><i class="fa fa-envelope"></i>数据分析 </a></li>
+
+    </ul>
+    <div class="jquery-accordion-menu-footer">Footer</div>
+</div>
+
+
+<!--引入js-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/main/jquery-accordion-menu.js"></script>
+<script src="../assets/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery("#jquery-accordion-menu").jqueryAccordionMenu();
+
+    });
+
+    function tou() {
+        alert("点击了头像，跳转到个人详情！！");
+    }
+</script>
+</body>
+</html>
